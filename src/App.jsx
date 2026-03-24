@@ -1,7 +1,11 @@
+import { Outlet } from 'react-router';
+
 function App() {
   return (
     <>
-      <section id='center'>Main</section>
+      <section>
+        <Outlet />
+      </section>
     </>
   );
 }
