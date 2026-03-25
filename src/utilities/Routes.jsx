@@ -1,12 +1,12 @@
-import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import App from '../App';
+import Home from '../pages/Home';
 
 function Router() {
   const router = createBrowserRouter([
     {
-      path: '/',
       element: <App />,
+      children: [{ index: true, element: <Home /> }],
     },
   ]);
   return <RouterProvider router={router} />;
