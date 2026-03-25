@@ -17,7 +17,8 @@
 @theme {
   --color-nature-accent: #e9762b;
   --color-nature-dark: #0d4715;
-  --color-nature-alt: #41644a;
+  --color-nature-altDark: #41644a;
+  --color-nature-altLight: #71a279;
   --color-nature-light: #ebe1d1;
 
   --breakpoint-xs: 30rem;
@@ -37,8 +38,14 @@
   }
 }
 
+#root {
+  height: 100%;
+}
+
 body {
   background-color: var(--color-nature-dark);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
