@@ -4,8 +4,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
-    <header className='p-2 flex justify-between items-center'>
-      <img src={logoSmall} alt='Logo' width={150} />
+    <header role='banner' className='p-2 flex justify-between items-center'>
+      <img src={logoSmall} alt='Logo' width={150} height={69} loading='lazy' />
       <FontAwesomeIcon
         icon={faBars}
         fontSize={48}
