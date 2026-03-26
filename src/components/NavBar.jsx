@@ -8,7 +8,9 @@ function NavBar() {
         [&>li]:hover:text-nature-dark'
       >
         <li>
-          <Link href='/#about'>About</Link>
+          <Link to={'/about'} viewTransition={true}>
+            About
+          </Link>
         </li>
         <li>
           <Link href='#projects'>Projects</Link>
