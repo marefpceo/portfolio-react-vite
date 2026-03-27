@@ -23,7 +23,7 @@ export default function MenuModal({ open, closeMenuModal }) {
             fontSize={32}
             onClick={closeMenuModal}
           />
-          <ul className='mx-4 mt-20 p-4 flex flex-col items-center text-xl gap-8 '>
+          <ul className='mx-4 mt-20 p-4 flex flex-col items-center text-2xl gap-8 '>
             <li className={`${location.pathname === '/' ? 'hidden' : ''}`}>
               <Link to={'/'} onClick={closeMenuModal}>
                 Home

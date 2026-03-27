@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
 @import 'tailwindcss';
 
 @layer utilities {
@@ -29,6 +31,7 @@
   --color-foreground: var(--foreground);
   --font-sans: 'REM', san-serif;
   --font-mono: 'Geist Mono', monospace;
+  --font-brunoAce: 'Bruno Ace', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,4 +51,5 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   overflow: hidden;
+  font-family: var(--font-sans);
 }

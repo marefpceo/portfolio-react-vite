@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <nav className='hidden rounded-2xl h-5/6 w-2/6 md:flex bg-nature-altLight'>
       <ul
-        className='w-full flex gap-8 text-lg items-center justify-center [&>li]:w-full [&>li]:text-center
+        className='w-full flex gap-8 text-xl items-center justify-center [&>li]:w-full [&>li]:text-center
         [&>li]:hover:text-nature-dark'
       >
         <li className={`${location.pathname === '/' ? 'hidden' : ''}`}>

@@ -3,15 +3,19 @@ import TypewriterComponent from 'typewriter-effect';
 function IntroHeroMobile() {
   return (
     <div className='mt-48'>
-      <p className='text-3xl text-nature-light indent-4'>Hi, I&apos;m </p>
-      <h1 className='text-nature-accent text-4xl'>Lamar Stevens</h1>
-      <div className='text-2xl text-center text-nature-light'>
+      <p className='mb-4 text-5xl text-nature-altLight font-sans indent-4'>
+        Hi, I&apos;m{' '}
+      </p>
+      <h1 className='text-nature-accent font-brunoAce text-7xl'>
+        Lamar Stevens
+      </h1>
+      <div className='mt-4 text-3xl text-center font-sans italic text-nature-light'>
         <TypewriterComponent
           options={{
             strings: [
-              'Full Stack Developer',
-              'Frontend Developer',
-              'Backend Developer',
+              '- Full Stack Developer -',
+              '- Frontend Developer -',
+              '- Backend Developer -',
             ],
             autoStart: true,
             loop: true,
