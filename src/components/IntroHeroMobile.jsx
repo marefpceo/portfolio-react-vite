@@ -13,9 +13,9 @@ function IntroHeroMobile() {
         <TypewriterComponent
           options={{
             strings: [
-              '- Full Stack Developer -',
-              '- Frontend Developer -',
-              '- Backend Developer -',
+              'Full Stack Developer',
+              'Frontend Developer',
+              'Backend Developer',
             ],
             autoStart: true,
             loop: true,
