@@ -44,9 +44,6 @@
 
 body {
   background-color: var(--color-nature-dark);
-  /* background-image: url('./assets/portfolioBg.webp');
-  background-repeat: no-repeat;
-  background-size: cover; */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
