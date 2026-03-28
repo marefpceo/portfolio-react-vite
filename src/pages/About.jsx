@@ -12,7 +12,7 @@ function About() {
           University of Maryland Global Campus (UMGC), with a strong foundation
           in building scalable, user-focused web applications. As a military
           veteran, I bring a disciplined, mission-driven mindset to every
-          project—valuing teamwork, accountability, and clear execution
+          project—valuing teamwork, accountability, and clear execution.
         </p>
         <br />
         <p>
@@ -32,9 +32,9 @@ function About() {
         <br />
         <p>
           Outside of development, you’ll usually find me in the workshop covered
-          in “man glitter” from a woodworking project, logging miles on
-          long-distance runs, spending time with my wife and two dogs, or
-          watching the garden grow.
+          in saw dust from a woodworking project, logging miles on long-distance
+          runs, spending time with my wife and two dogs, or watching the garden
+          grow.
         </p>
       </div>
 
