@@ -29,8 +29,8 @@ function TechStackDiv() {
     <div className='my-8 p-8 flex flex-nowrap justify-evenly items-center bg-nature-accent/20 border border-nature-altLight/40 rounded-md'>
       <Marquee className='[--duration:20s]'>
         {icons.map((icon) => (
-          <span className='mx-2'>
-            <img key={uuidv4()} src={icon} alt={`${icon} icon`} width={64} />
+          <span key={uuidv4()} className='mx-2'>
+            <img src={icon} alt={`${icon} icon`} width={64} />
           </span>
         ))}
       </Marquee>
