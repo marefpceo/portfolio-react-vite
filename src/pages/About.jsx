@@ -3,7 +3,7 @@ import TechStackDiv from '../components/TechStackDiv';
 function About() {
   return (
     <section className='m-4 p-4 min-h-full flex items-center'>
-      <div className='m-auto p-4 h-full w-2/5 rounded-md bg-nature-altLight text-nature-dark shadow-[0_0_8px_0px] shadow-nature-accent'>
+      <div className='m-auto p-4 h-full w-2/5 rounded-md bg-nature-altLight text-nature-dark shadow-[0px_0px_10px_-5px] shadow-black'>
         <h1 className='m-2 text-4xl text-center text-shadow-sm text-shadow-nature-accent/25'>
           About
         </h1>
