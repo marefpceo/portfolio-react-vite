@@ -37,7 +37,7 @@ export default function MenuModal({ open, closeMenuModal }) {
             <li
               className={`${location.pathname === '/projects' ? 'hidden' : ''}`}
             >
-              <Link to={'#projects'} onClick={closeMenuModal}>
+              <Link to={'/projects'} onClick={closeMenuModal}>
                 Projects
               </Link>
             </li>
@@ -54,3 +54,4 @@ export default function MenuModal({ open, closeMenuModal }) {
     </div>
   );
 }
+``;

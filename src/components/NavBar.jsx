@@ -20,12 +20,12 @@ function NavBar() {
           </Link>
         </li>
         <li className={`${location.pathname === '/projects' ? 'hidden' : ''}`}>
-          <Link href={'#projects'} viewTransition={true}>
+          <Link to={'/projects'} viewTransition={true}>
             Projects
           </Link>
         </li>
         <li className={`${location.pathname === '/contact' ? 'hidden' : ''}`}>
-          <Link href={'#contact'} viewTransition={true}>
+          <Link to={'#contact'} viewTransition={true}>
             Contact
           </Link>
         </li>
