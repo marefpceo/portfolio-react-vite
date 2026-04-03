@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import TechTextBubble from './TextBubble';
 
 function ProjectCard({ cardImage, title, description }) {
@@ -28,7 +31,18 @@ function ProjectCard({ cardImage, title, description }) {
           <hr className='mt-1 border border-nature-dark shadow-[0_0px_5px_0] shadow-nature-accent' />
           <p className='mt-4'>{description}</p>
         </div>
-        <div className='card-footer mt-2 py-2'>github and live links</div>
+        <div className='card-footer flex gap-4 mt-2 py-2 '>
+          <FontAwesomeIcon
+            icon={faGithub}
+            className='text-nature-dark'
+            fontSize={28}
+          />
+          <FontAwesomeIcon
+            icon={faArrowUpRightFromSquare}
+            className='text-nature-dark'
+            fontSize={28}
+          />
+        </div>
       </div>
     </div>
   );
