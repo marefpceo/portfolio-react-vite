@@ -7,8 +7,8 @@ const description =
 
 function Projects() {
   return (
-    <section className='mx-auto w-3/4'>
-      <h1 className='py-4 text-center text-nature-altLight text-shadow-xs text-shadow-nature-light'>
+    <section className='my-2 mx-auto w-3/4'>
+      <h1 className='my-4 py-4 text-center text-nature-altLight text-shadow-xs text-shadow-nature-light'>
         Projects
       </h1>
 
