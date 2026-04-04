@@ -8,11 +8,11 @@ const description =
 function Projects() {
   return (
     <section className='my-2 mx-auto w-3/4'>
-      <h1 className='my-4 py-4 text-center text-nature-altLight text-shadow-xs text-shadow-nature-light'>
+      <h1 className='my-4 py-8 text-3xl sm:text-4xl md:text-5xl text-center text-nature-altLight text-shadow-xs text-shadow-nature-light'>
         Projects
       </h1>
 
-      <div className='flex flex-wrap gap-8 justify-center'>
+      <div className='flex flex-wrap gap-16 justify-center'>
         <ProjectCard
           cardImage={placeholder}
           title={cardTitle}
