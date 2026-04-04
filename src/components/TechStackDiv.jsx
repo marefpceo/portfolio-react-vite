@@ -26,11 +26,11 @@ function TechStackDiv() {
   ];
 
   return (
-    <div className='my-8 p-8 flex flex-nowrap justify-evenly items-center bg-nature-accent/20 border border-nature-altLight/40 rounded-md'>
+    <div className='my-8 p-2 flex flex-nowrap justify-evenly items-center bg-nature-accent/20 border border-nature-altLight/40 rounded-md'>
       <Marquee className='[--duration:20s]'>
         {icons.map((icon) => (
           <span key={uuidv4()} className='mx-2'>
-            <img src={icon} alt={`${icon} icon`} width={64} />
+            <img src={icon} alt={`${icon} icon`} width={44} />
           </span>
         ))}
       </Marquee>
