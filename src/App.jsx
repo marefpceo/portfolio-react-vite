@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div role='main' className='md:max-w-full lg:max-w-4/5 mx-auto'>
         <Header />
         <Outlet />
+        <Footer />
       </div>
     </div>
   );
