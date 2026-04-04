@@ -5,12 +5,12 @@ function About() {
     <section className='m-4 p-4 h-full w-11/12 flex flex-col items-center md:flex-row md:justify-evenly '>
       <div
         className='m-auto px-0 pt-0 pb-4 h-125 md:h-3/4 overflow-scroll md:w-2/3 lg:w-2/4 xl:w-2/5 rounded-md 
-        bg-nature-altLight text-nature-dark shadow-[0px_0px_10px_-5px] shadow-black 
+        bg-nature-light text-nature-dark shadow-[0px_0px_10px_-5px] shadow-black 
         [&>p]:text-center [&>p]:px-4 md:[&>p]:text-start no-scrollbar'
       >
         <h1
           className='mb-4 mt-0 py-5 text-3xl sm:text-4xl md:text-5xl text-center text-shadow-sm 
-          text-shadow-nature-accent/25 sticky top-0 bg-nature-altLight'
+          text-shadow-nature-accent/25 sticky top-0 bg-nature-light'
         >
           About
         </h1>
