@@ -4,9 +4,9 @@ function NavBar() {
   const location = useLocation();
 
   return (
-    <nav className='hidden rounded-2xl h-5/6 w-2/6 md:flex bg-nature-altLight'>
+    <nav className='hidden rounded-2xl h-5/6 w-fit xl:w-2/6 py-1 px-4 md:flex bg-nature-altLight'>
       <ul
-        className='w-full flex gap-8 text-xl items-center justify-center [&>li]:w-full [&>li]:text-center
+        className='w-full flex gap-8 text-lg lg:text-xl font-mono items-center justify-center [&>li]:w-full [&>li]:text-center
         [&>li]:hover:text-nature-dark'
       >
         <li className={`${location.pathname === '/' ? 'hidden' : ''}`}>
