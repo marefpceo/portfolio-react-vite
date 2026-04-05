@@ -25,7 +25,7 @@ function NavBar() {
           </Link>
         </li>
         <li className={`${location.pathname === '/contact' ? 'hidden' : ''}`}>
-          <Link to={'#contact'} viewTransition={true}>
+          <Link to={'/contact'} viewTransition={true}>
             Contact
           </Link>
         </li>

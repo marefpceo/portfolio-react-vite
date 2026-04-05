@@ -45,7 +45,7 @@ export default function MenuModal({ open, closeMenuModal }) {
               className={`${location.pathname === '/contact' ? 'hidden' : ''}`}
             >
               <Link to={'#contact'} onClick={closeMenuModal}>
-                Contacts
+                Contact
               </Link>
             </li>
           </ul>
