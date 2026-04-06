@@ -8,7 +8,7 @@ import {
 
 function Footer() {
   return (
-    <footer className='mt-16 h-40 text-nature-dark'>
+    <footer className='mt-24 h-40 text-nature-dark'>
       <div className='mx-auto w-11/12 md:w-3/5 lg:w-3/6 xl:w-5/12 h-8/12 flex flex-col justify-between items-center bg-nature-light rounded-full'>
         <div className='w-3/6 pt-4 flex justify-evenly'>
           <Link to={'https://www.linkedin.com/in/lamarstevens'} target='_blank'>

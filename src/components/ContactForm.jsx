@@ -1,3 +1,6 @@
+const inputStyle =
+  'border border-nature-light/65 rounded-md px-4 py-2 focus:outline-none focus:ring-1 focus:ring-nature-accent';
+
 function ContactForm() {
   return (
     <>
@@ -7,15 +10,27 @@ function ContactForm() {
       >
         <div className='flex flex-col gap-1'>
           <label htmlFor='name'>Name</label>
-          <input type='text' name='name' id='className' />
+          <input
+            type='text'
+            name='name'
+            id='name'
+            className={inputStyle}
+            required
+          />
         </div>
         <div className='flex flex-col gap-1'>
           <label htmlFor='email'>Email</label>
-          <input type='email' name='email' id='email' />
+          <input
+            type='email'
+            name='email'
+            id='email'
+            className={inputStyle}
+            required
+          />
         </div>
         <div className='flex flex-wrap justify-between items-center lg:items-start [&>select]:rounded-xs'>
           <label htmlFor='subject'>Subject</label>
-          <select name='subject' id='subject'>
+          <select name='subject' id='subject' className={inputStyle}>
             <option value='general'>General Inquiry</option>
             <option value='project'>Project Inquiry</option>
             <option value='job'>Job Opportunity</option>
@@ -24,11 +39,17 @@ function ContactForm() {
         </div>
         <div className='flex flex-col gap-1'>
           <label htmlFor='message'>Message</label>
-          <textarea name='message' id='message' cols='30' rows='10'></textarea>
+          <textarea
+            name='message'
+            id='message'
+            cols='30'
+            rows='10'
+            className={inputStyle}
+          ></textarea>
         </div>
 
         <div
-          className='button-div mx-auto p-2 rounded-md border border-nature-dark hover:bg-nature-dark 
+          className='button-div mx-auto my-5 p-2 rounded-md border border-nature-dark hover:bg-nature-dark 
           hover:text-nature-light hover:border-nature-accent hover:shadow hover:shadow-nature-accent'
         >
           <button type='submit'>Send Message</button>
