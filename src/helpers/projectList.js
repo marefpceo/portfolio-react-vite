@@ -1,10 +1,12 @@
+import lastStopShop from '../utilities/CloudinaryConfig';
+
 export const projectList = [
   {
     projectTitle: 'Last Stop Shop',
     projectDescription:
       'The purpose of this project was to create a simple shopping cart using React to show proficiency in basic concepts.',
     projectImage: '/lastStopShop.webp',
-    projectImageUrl: '/lastStopShop.webp',
+    projectImageUrl: lastStopShop,
     projectLinks: [
       {
         name: 'Live Demo',

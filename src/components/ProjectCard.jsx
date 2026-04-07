@@ -3,6 +3,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import TechTextBubble from './TextBubble';
 import { Link } from 'react-router';
+import { AdvancedImage } from '@cloudinary/react';
 
 function ProjectCard({
   cardImage,
@@ -14,13 +15,9 @@ function ProjectCard({
 }) {
   return (
     <div className='h-fit p-0 border border-nature-accent/65 rounded-md w-96'>
-      <div className='image-div bg-nature-dark'>
-        <img
-          src={cardImage}
-          alt='Project card image'
-          className='w-full rounded-t-md'
-        />
-        <div className='px-1 pt-2 flex flex-wrap justify-start gap-4'>
+      <div className='image-div bg-nature-dark rounded-t-md *:rounded-t-md'>
+        <AdvancedImage cldImg={cardImage} />
+        <div className='px-1 pt-3 flex flex-wrap justify-start gap-4'>
           {techStack.map((tech) => (
             <TechTextBubble
               text={tech}

@@ -16,7 +16,7 @@ function Projects() {
       <div className='flex flex-wrap gap-16 justify-center'>
         {projectList.map((project) => (
           <ProjectCard
-            cardImage={placeholder}
+            cardImage={project.projectImageUrl}
             title={project.projectTitle}
             description={project.projectDescription}
             demoLink={project.projectLinks[0].url}
