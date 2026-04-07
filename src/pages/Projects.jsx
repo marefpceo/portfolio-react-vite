@@ -1,5 +1,6 @@
 import ProjectCard from '../components/ProjectCard';
 import placeholder from '../assets/placeholder-view.png';
+import { projectList } from '../helpers/projectList';
 
 const cardTitle = 'Last Stop Shop';
 const description =
@@ -13,29 +14,13 @@ function Projects() {
       </h1>
 
       <div className='flex flex-wrap gap-16 justify-center'>
-        <ProjectCard
-          cardImage={placeholder}
-          title={cardTitle}
-          description={description}
-        />
-
-        <ProjectCard
-          cardImage={placeholder}
-          title={cardTitle}
-          description={description}
-        />
-
-        <ProjectCard
-          cardImage={placeholder}
-          title={cardTitle}
-          description={description}
-        />
-
-        <ProjectCard
-          cardImage={placeholder}
-          title={cardTitle}
-          description={description}
-        />
+        {projectList.map((project) => (
+          <ProjectCard
+            cardImage={placeholder}
+            title={project.projectTitle}
+            description={project.projectDescription}
+          />
+        ))}
       </div>
     </section>
   );
