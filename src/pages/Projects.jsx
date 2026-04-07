@@ -1,6 +1,7 @@
 import ProjectCard from '../components/ProjectCard';
 import placeholder from '../assets/placeholder-view.png';
 import { projectList } from '../helpers/projectList';
+import { v4 as uuidv4 } from 'uuid';
 
 const cardTitle = 'Last Stop Shop';
 const description =
@@ -16,6 +17,7 @@ function Projects() {
       <div className='flex flex-wrap gap-16 justify-center'>
         {projectList.map((project) => (
           <ProjectCard
+            key={uuidv4()}
             cardImage={project.projectImageUrl}
             title={project.projectTitle}
             description={project.projectDescription}
