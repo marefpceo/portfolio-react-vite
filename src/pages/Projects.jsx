@@ -19,6 +19,9 @@ function Projects() {
             cardImage={placeholder}
             title={project.projectTitle}
             description={project.projectDescription}
+            demoLink={project.projectLinks[0].url}
+            sourceLink={project.projectLinks[1].url}
+            techStack={project.techStack}
           />
         ))}
       </div>

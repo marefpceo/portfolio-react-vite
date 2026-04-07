@@ -2,22 +2,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import TechTextBubble from './TextBubble';
+import { Link } from 'react-router';
 
-function ProjectCard({ cardImage, title, description }) {
+function ProjectCard({
+  cardImage,
+  title,
+  description,
+  demoLink,
+  sourceLink,
+  techStack,
+}) {
   return (
-    <div className='h-fit p-0 border border-nature-accent/65 rounded-md w-80'>
+    <div className='h-fit p-0 border border-nature-accent/65 rounded-md w-96'>
       <div className='image-div bg-nature-dark'>
         <img
           src={cardImage}
           alt='Project card image'
           className='w-full rounded-t-md'
         />
-        <div className='px-1 pt-2 flex justify-center gap-4'>
-          <TechTextBubble
-            text={'React'}
-            bgColor={'bg-nature-altLight'}
-            textColor={'text-nature-dark'}
-          />
+        <div className='px-1 pt-2 flex flex-wrap justify-start gap-4'>
+          {techStack.map((tech) => (
+            <TechTextBubble
+              text={tech}
+              bgColor={'bg-nature-altLight'}
+              textColor={'text-nature-dark'}
+            />
+          ))}
         </div>
       </div>
       <div
@@ -32,16 +42,20 @@ function ProjectCard({ cardImage, title, description }) {
           <p className='mt-4'>{description}</p>
         </div>
         <div className='card-footer flex gap-4 mt-2 py-2 '>
-          <FontAwesomeIcon
-            icon={faGithub}
-            className='text-nature-dark'
-            fontSize={28}
-          />
-          <FontAwesomeIcon
-            icon={faArrowUpRightFromSquare}
-            className='text-nature-dark'
-            fontSize={28}
-          />
+          <Link to={sourceLink} target='_blank'>
+            <FontAwesomeIcon
+              icon={faGithub}
+              className='text-nature-dark'
+              fontSize={28}
+            />
+          </Link>
+          <Link to={demoLink} target='_blank'>
+            <FontAwesomeIcon
+              icon={faArrowUpRightFromSquare}
+              className='text-nature-dark'
+              fontSize={28}
+            />
+          </Link>
         </div>
       </div>
     </div>
