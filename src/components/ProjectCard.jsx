@@ -5,7 +5,7 @@ import TechTextBubble from './TextBubble';
 
 function ProjectCard({ cardImage, title, description }) {
   return (
-    <div className='p-0 border border-nature-accent/65 rounded-md w-80'>
+    <div className='h-fit p-0 border border-nature-accent/65 rounded-md w-80'>
       <div className='image-div bg-nature-dark'>
         <img
           src={cardImage}
