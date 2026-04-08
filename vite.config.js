@@ -13,7 +13,10 @@ export default defineConfig({
       },
     }),
     tailwindcss(),
-    Sitemap({ hostname: 'https://www.lamar-stevens.com' }),
+    Sitemap({
+      hostname: 'https://www.lamar-stevens.com',
+      changefreq: 'weekly',
+    }),
   ],
   resolve: {
     alias: {
