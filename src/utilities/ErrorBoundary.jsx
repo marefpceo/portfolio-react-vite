@@ -29,10 +29,24 @@ function ErrorBoundary() {
         <p>{error.message}</p>
         <p>The stack trace is:</p>
         <pre>{error.stack}</pre>
+        <Link to={'/'} replace>
+          <p className='mt-8 underline text-xl text-nature-accent hover:text-nature-light'>
+            Return to Home
+          </p>
+        </Link>
       </div>
     );
   } else {
-    return <h1>Unknown Error</h1>;
+    return (
+      <>
+        <h1>Unknown Error</h1>
+        <Link to={'/'} replace>
+          <p className='mt-8 underline text-xl text-nature-accent hover:text-nature-light'>
+            Return to Home
+          </p>
+        </Link>
+      </>
+    );
   }
 }
 
