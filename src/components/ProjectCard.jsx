@@ -7,15 +7,26 @@ import { AdvancedImage } from '@cloudinary/react';
 import { auto } from '@cloudinary/url-gen/actions/resize';
 import cld from '../utilities/CloudinaryConfig';
 import { v4 as uuidv4 } from 'uuid';
+import { useState } from 'react';
 
 function ProjectCard({
   cardImage,
+  localImage,
   title,
   description,
   demoLink,
   sourceLink,
   techStack,
 }) {
+  const [imageSrc, setImageSrc] = useState(
+    processProjectImage(cardImage).toURL(),
+  );
+
+  function handleError(e) {
+    e.targe.onerror = null;
+    setImageSrc(localImage);
+  }
+
   function processProjectImage(imageId) {
     const image = cld
       .image(imageId)
@@ -25,14 +36,13 @@ function ProjectCard({
     return image;
   }
 
+  console.log(processProjectImage(cardImage).toURL());
+
   return (
     <div className='h-fit p-0 border border-nature-accent/65 rounded-md w-96'>
       <div className='image-div bg-nature-dark rounded-t-md *:rounded-t-md'>
         <div className='h-60 rounded-t-md'>
-          <AdvancedImage
-            cldImg={processProjectImage(cardImage)}
-            className={'h-full w-full rounded-t-md'}
-          />
+          <img src={imageSrc} alt='' onError={handleError} />
         </div>
         <div className='px-1 pt-3 flex flex-wrap justify-start gap-4'>
           {techStack.map((tech) => (

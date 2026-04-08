@@ -1,11 +1,6 @@
 import ProjectCard from '../components/ProjectCard';
-import placeholder from '../assets/placeholder-view.png';
 import { projectList } from '../helpers/projectList';
 import { v4 as uuidv4 } from 'uuid';
-
-const cardTitle = 'Last Stop Shop';
-const description =
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsum modi error facilis doloribus quas, adipisci dicta provident incidunt cupiditate.';
 
 function Projects() {
   return (
@@ -19,6 +14,7 @@ function Projects() {
           <ProjectCard
             key={uuidv4()}
             cardImage={project.projectImageUrl}
+            localImage={project.projectImage}
             title={project.projectTitle}
             description={project.projectDescription}
             demoLink={project.projectLinks[0].url}

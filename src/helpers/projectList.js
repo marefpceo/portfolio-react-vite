@@ -37,57 +37,22 @@ export const projectList = [
     ],
     techStack: ['NodeJS', 'ExpressJS', 'PostgreSQL', 'EJS'],
   },
-  // {
-  //   projectTitle: 'Blog API (Client)',
-  //   projectDescription:
-  //     'Blog API is a project used to create a blog site using an API only backend and two different front-ends for accessing and editing blog posts.',
-  //   projectImage: '/blogClientHome.webp',
-  //   projectImageUrl: '/blogClientHome.webp',
-  //   projectLinks: [
-  //     {
-  //       name: 'Live Demo',
-  //       url: 'https://blog-api-c9w.pages.dev/',
-  //     },
-  //     {
-  //       name: 'Source Code',
-  //       url: 'https://github.com/marefpceo/blog-api',
-  //     },
-  //   ],
-  //   techStack: ['React', 'Vite', 'Tailwind', 'ExpressJS'],
-  // },
-  // {
-  //   projectTitle: 'Blog API (Admin)',
-  //   projectDescription:
-  //     'Blog API is a project used to create a blog site using an API only backend and two different front-ends for accessing and editing blog posts.',
-  //   projectImage: '/blogAdminLogin.webp',
-  //   projectImageUrl: '/blogAdminLogin.webp',
-  //   projectLinks: [
-  //     {
-  //       name: 'Live Demo',
-  //       url: 'https://blog-api-admin.pages.dev/login',
-  //     },
-  //     {
-  //       name: 'Source Code',
-  //       url: 'https://github.com/marefpceo/blog-api',
-  //     },
-  //   ],
-  //   techStack: ['React', 'Vite', 'Tailwind', 'ExpressJS'],
-  // },
-  // {
-  //   projectTitle: 'mChat Messaging',
-  //   projectDescription: 'Messaging app TOP',
-  //   projectImage: '/mchatLogo.webp',
-  //   projectImageUrl: '/messagingHome.webp',
-  //   projectLinks: [
-  //     {
-  //       name: 'Live Demo',
-  //       url: 'https://messaging-app-frontend-7ib.pages.dev/',
-  //     },
-  //     {
-  //       name: 'Source Code',
-  //       url: 'https://github.com/marefpceo/messaging-app-server',
-  //     },
-  //   ],
-  //   techStack: ['NodeJS', 'ExpressJS', 'PostgreSQL', 'Prisma ORM'],
-  // },
+  {
+    projectTitle: `Where's Waldo`,
+    projectDescription:
+      'A photo tagging app based off of the popular, classic game.',
+    projectImage: '/waldoLogo.webp',
+    projectImageUrl: 'waldoLogo_jwcefc',
+    projectLinks: [
+      {
+        name: 'Live Demo',
+        url: 'https://339d8d51.photo-tagging-app.pages.dev/',
+      },
+      {
+        name: 'Source Code',
+        url: 'https://github.com/marefpceo/photo-tagging-app',
+      },
+    ],
+    techStack: ['React', 'Vite', 'Tailwind', 'ExpressJS'],
+  },
 ];
