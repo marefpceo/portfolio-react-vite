@@ -3,6 +3,7 @@ import TechStackDiv from '../components/TechStackDiv';
 function About() {
   return (
     <section className='m-4 p-4 h-full w-11/12 flex flex-col items-center md:flex-row md:justify-evenly '>
+      <title>About | Lamar Stevens</title>
       <div
         className='m-auto px-0 pt-0 pb-4 h-125 md:h-3/4 overflow-scroll md:w-2/3 lg:w-2/4 xl:w-2/5 rounded-md 
         bg-nature-light text-nature-dark shadow-[0px_0px_10px_-5px] shadow-black 

@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 function Projects() {
   return (
     <section className='my-2 mx-auto w-3/4'>
+      <title>Projects | Lamar Stevens</title>
       <h1 className='my-4 py-8 text-3xl sm:text-4xl md:text-5xl text-center text-nature-altLight text-shadow-xs text-shadow-nature-light'>
         Projects
       </h1>

@@ -2,9 +2,12 @@ import IntroHeroMobile from '../components/IntroHeroMobile';
 
 function Home() {
   return (
-    <div className='flex flex-col h-full items-center'>
-      <IntroHeroMobile />
-    </div>
+    <>
+      <title>Home | Lamar Stevens</title>
+      <div className='flex flex-col h-full items-center'>
+        <IntroHeroMobile />
+      </div>
+    </>
   );
 }
 
