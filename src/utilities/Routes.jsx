@@ -4,11 +4,13 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
+import ErrorBoundary from './ErrorBoundary';
 
 function Router() {
   const router = createBrowserRouter([
     {
       element: <App />,
+      errorElement: <ErrorBoundary />,
       children: [
         { index: true, element: <Home /> },
         { path: '/about', element: <About /> },
