@@ -6,7 +6,7 @@ export const projectList = [
     projectDescription:
       'The purpose of this project was to create a simple shopping cart using React to show proficiency in basic concepts.',
     projectImage: '/lastStopShop.webp',
-    projectImageUrl: 'lastStopShop_anih5y',
+    projectImageUrl: 'lastStopShop_i4azwe',
     projectLinks: [
       {
         name: 'Live Demo',
@@ -22,9 +22,9 @@ export const projectList = [
   {
     projectTitle: 'Grocery Inventory App',
     projectDescription:
-      "Express Inventory App is an inventory management web application designed for a fictitious grocery store. The app makes use of CRUD methods for managing, maintaining and updating the store's inventory. The app aims to give users a quick and efficient way view and manage inventories, organizing items by categories and subcategories",
+      "Grocery Inventory App is an inventory management web application designed for a fictitious grocery store. The app makes use of CRUD methods for managing, maintaining and updating the store's inventory. The app aims to give users a quick and efficient way view and manage inventories, organizing items by categories and subcategories",
     projectImage: '/expressInventoryApp.webp',
-    projectImageUrl: 'expressInventoryApp_dl1eii',
+    projectImageUrl: 'expressInventoryApp_m7fkfz',
     projectLinks: [
       {
         name: 'Live Demo',
@@ -42,7 +42,7 @@ export const projectList = [
     projectDescription:
       'A photo tagging app based off of the popular, classic game.',
     projectImage: '/waldoLogo.webp',
-    projectImageUrl: 'waldoLogo_jwcefc',
+    projectImageUrl: 'waldoLogo_vvfevg',
     projectLinks: [
       {
         name: 'Live Demo',

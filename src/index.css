@@ -131,7 +131,8 @@ h2 {
   font-family: var(--font-brunoAce);
 }
 
-p {
+p,
+a {
   font-family: var(--font-mono);
 }
 
