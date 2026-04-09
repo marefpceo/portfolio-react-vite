@@ -1,6 +1,6 @@
+import { v4 as uuidv4 } from 'uuid';
 import ProjectCard from '../components/ProjectCard';
 import { projectList } from '../helpers/projectList';
-import { v4 as uuidv4 } from 'uuid';
 
 function Projects() {
   return (

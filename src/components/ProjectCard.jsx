@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router';
+import { Link, useOutletContext } from 'react-router';
 import { v4 as uuidv4 } from 'uuid';
 
 import TechTextBubble from './TextBubble';
@@ -25,7 +25,10 @@ function ProjectCard({
   const [imageSrc, setImageSrc] = useState(
     processProjectImage(cardImage).toURL(),
   );
+  const { handleOpen } = useOutletContext();
+  const { setModalText } = useOutletContext();
 
+  // Checks if any text is hidden and set isClamped accordingly
   useEffect(() => {
     function checkOverflow() {
       if (textRef.current) {
@@ -38,6 +41,11 @@ function ProjectCard({
     window.addEventListener('resize', checkOverflow());
     return window.removeEventListener('resize', checkOverflow());
   }, [description]);
+
+  function handleClick() {
+    setModalText(description);
+    handleOpen();
+  }
 
   // Function to set and use fallback image if issues with Cloudinary occur
   function handleError(e) {
@@ -90,13 +98,13 @@ function ProjectCard({
             {description}
           </p>
           {isClamped && (
-            <a
-              href='#more'
+            <p
               className='absolute right-0 pr-1 text-nature-dark hover:text-nature-accent 
                 hover:text-shadow-nature-dark'
+              onClick={handleClick}
             >
               (Read more)
-            </a>
+            </p>
           )}
         </div>
         <div className='card-footer flex gap-4 mt-8 py-2 '>
