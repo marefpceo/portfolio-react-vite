@@ -18,7 +18,7 @@ function Modal({ isOpen, onClose, text }) {
     bg-nature-altDark/85'
     >
       <div
-        className='modal-content w-11/12 min-h-40 flex flex-col bg-linear-to-t from-nature-light via-90% 
+        className='modal-content w-10/12 md:w-2/3 lg:w-2/4 xl:w-1/3 2xl:w-1/5 min-h-40 flex flex-col bg-linear-to-t from-nature-light via-90% 
           via-nature-altLight to-nature-dark rounded-b-md rounded-md border border-nature-light/60'
       >
         <p className='px-5 py-8 flex-1'>{text}</p>
