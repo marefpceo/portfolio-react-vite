@@ -2,17 +2,21 @@
 
 <!-- PROJECT SHIELDS -->
 
+<div align='center'>
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+</div>
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/marefpceo">
-    <img src="./public/Logo1.svg" alt="Logo" width="80" height="80">
+    <img src="https://res.cloudinary.com/lamardev/image/upload/v1775537787/logo-150w_vaulex.webp" alt="Logo" width="150" height="69">
   </a>
 
 <h3 align="center">Personal Portfolio</h3>
@@ -23,7 +27,7 @@
     <a href="https://github.com/marefpceo/portfolio-react-vite"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/marefpceo/portfolio-react-vite">View Demo</a>
+    <a href="https://www.lamar-stevens.com">View Demo</a>
     &middot;
     <a href="https://github.com/marefpceo/portfolio-react-vite/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
@@ -63,8 +67,7 @@
 <!--
 [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 <div align='center'>
-  <img src='./public/mobile_screenshot.webp' height='300'>
-  <img src='./public//tablet_screenshot.webp' width='300'>
+  <img src='https://res.cloudinary.com/lamardev/image/upload/v1775749752/portfolio-screenshot_qnogv9.webp' width='400'>
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -75,7 +78,10 @@
 
 [![Vite][Vite]][Vite-url] &nbsp;
 [![React][React.js]][React-url] &nbsp;
+[![React Router][React Router]][Reactrouter-url] &nbsp;
 [![Tailwindcss][Tailwindcss]][Tailwindcss-url] &nbsp;
+[![ExpressJS][ExpressJS]][Expressjs-url] &nbsp;
+[![Cloudinary][Cloudinary]][Cloudinary-url] &nbsp;
 
 </div>
 
@@ -88,7 +94,7 @@
 
 There are two (2) ways to access the project:
 
-1. **[Live Version][live-link]** for a general user experience.
+1. **[Live Version][live-link]** for the end user experience.
 
 2. **Local Installation** to install and run the project on a local machine. Proceed to the next section to verify prerequisites are met prior to installing.
 
@@ -174,7 +180,7 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Lamar Stevens - [@stevens14704](https://x.com/stevens14704) - [LinkedIn](https://www.linkedin.com/in/lamarstevens)
 
 Project Link: [https://github.com/marefpceo/portfolio-react-vite](https://github.com/marefpceo/portfolio-react-vite)
 
@@ -188,9 +194,9 @@ Project Link: [https://github.com/marefpceo/portfolio-react-vite](https://github
 - [Node.js][Nodejs-url]
 - [NPM][NPM-url]
 - [Prettier][Prettier-url]
-- [Code Diagram](https://codediagram.io)
-- [React Icons](https://react-icons.github.io/react-icons/)
+- [ESLint][ESLint-url]
 - [uuid](https://www.npmjs.com/package/uuid)
+- [Font Awesome][Fontawesome-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,8 +225,19 @@ Project Link: [https://github.com/marefpceo/portfolio-react-vite](https://github
 [React-url]: https://reactjs.org/
 [Tailwindcss]: https://img.shields.io/badge/Tailwindcss-FFFFFF?style=for-the-badge&logo=tailwindcss&logoColor=#06B6D4
 [Tailwindcss-url]: https://tailwindcss.com/
+[ExpressJS]: https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=%23ffffff
+[Expressjs-url]: https://expressjs.com/
 [Prettier]: https://img.shields.io/badge/prettier-1a2b34?style=for-the-badge&logo=prettier&logoColor=#F7B93E
 [Prettier-url]: https://prettier.io/
-[live-link]: https://github.com/marefpceo/portfolio-react-vite
+[Cloudinary]: https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=%23ffffff
+[Cloudinary-url]: https://www.cloudinary.com/
+[React Router]: https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=black
+[Reactrouter-url]: https://reactrouter.com/
+
+<!-- Links with no badges -->
+
+[live-link]: https://www.lamar-stevens.com/
 [Nodejs-url]: https://nodejs.org/
 [NPM-url]: https://npmjs.com/
+[ESLint-url]: https://eslint.org/
+[Fontawesome-url]: https://fontawesome.com/
